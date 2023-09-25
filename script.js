@@ -1,7 +1,6 @@
 let openButton = null;
 
 function toggleButton(button) {
-  console.log(button);
   if (button === openButton) {
     button.classList.remove("open");
     openButton = null;
