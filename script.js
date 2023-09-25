@@ -2,13 +2,25 @@ let openButton = null;
 
 function toggleButton(button) {
   if (button === openButton) {
-    button.classList.remove("open");
-    openButton = null;
+    closeButton(button);
   } else {
     if (openButton) {
-      openButton.classList.remove("open");
+      closeButton(openButton);
     }
-    button.classList.add("open");
     openButton = button;
+    openButton.classList.add("open");
+    togglePlusMinus(openButton);
   }
+}
+
+function closeButton(button) {
+  button.classList.remove("open");
+  togglePlusMinus(button);
+  openButton = null;
+}
+
+// toggle plus and minus
+function togglePlusMinus(button) {
+  button.childNodes[0].nodeValue =
+    button.childNodes[0].nodeValue.trim() === "+" ? "-" : "+";
 }

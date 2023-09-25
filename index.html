@@ -4,16 +4,34 @@
     <title>Only тестовое</title>
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      /*  position of buttons */
+      #btn-1 {
+        background: var(--color-blue);
+        left: 35%;
+        top: 45%;
+      }
+
+      #btn-2 {
+        left: 23%;
+        top: 70%;
+      }
+
+      #btn-3 {
+        left: 20%;
+        top: 19%;
+      }
+    </style>
   </head>
   <body>
     <div class="block">
-      <button class="button button-1" onclick="toggleButton(this)">
+      <button class="button" id="btn-1" onclick="toggleButton(this)">
         +<span>Стадион</span>
       </button>
-      <button class="button button-2" onclick="toggleButton(this)">
+      <button class="button" id="btn-2" onclick="toggleButton(this)">
         +<span>Пляж</span>
       </button>
-      <button class="button button-3" onclick="toggleButton(this)">
+      <button class="button" id="btn-3" onclick="toggleButton(this)">
         +<span>Дома</span>
       </button>
     </div>

@@ -32,6 +32,7 @@
   border-radius: 40px;
   background: var(--color-green);
   color: var(--color-white);
+  opacity: 0.9;
 
   transform: scale(1);
   transform-origin: center;
@@ -57,26 +58,17 @@
 }
 
 .button > span {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  left: -1000px;
+  visibility: hidden;
+  transition: all 0.3s ease;
 }
 
 .button.open > span {
-  display: inline-block;
-}
-
-/*  position of buttons */
-.button.button-1 {
-  background: var(--color-blue);
-  left: 35%;
-  top: 45%;
-}
-
-.button.button-2 {
-  left: 23%;
-  top: 70%;
-}
-
-.button.button-3 {
-  left: 20%;
-  top: 19%;
+  /* display: block; */
+  position: relative;
+  visibility: visible;
+  left: 0px;
+  transition: all 0.3s ease;
 }
