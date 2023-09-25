@@ -1,4 +1,5 @@
-#
+# https://replit.com/@kulmike2002/OnlyTestProject
+↑ ссылка на replit, чтобы не качать проект ↑
 
 # Тестовое задание для Only
 Кулешов Михаил 
